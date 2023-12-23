@@ -1,4 +1,4 @@
-package com.ra_nkan_mobile
+package com.aomb.rankan
 
 import android.app.Application
 import com.facebook.react.PackageList

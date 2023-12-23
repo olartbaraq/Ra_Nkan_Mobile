@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1010456567200",
+    "project_id": "ra-nkan-mobile",
+    "storage_bucket": "ra-nkan-mobile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1010456567200:android:38e5f5491e98c627e458c5",
+        "android_client_info": {
+          "package_name": "com.aomb.rankan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFiFhHdquCjb5Zoco_tQgUM3mZ7ZEZ15A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

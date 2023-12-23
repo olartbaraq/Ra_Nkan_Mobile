@@ -1,4 +1,4 @@
-package com.ra_nkan_mobile
+package com.aomb.rankan
 
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate
@@ -11,7 +11,7 @@ class MainActivity : ReactActivity() {
    * Returns the name of the main component registered from JavaScript. This is used to schedule
    * rendering of the component.
    */
-  override fun getMainComponentName(): String = "Ra_Nkan_Mobile"
+  override fun getMainComponentName(): String = "Ra_Nkan"
 
   /**
    * Returns the instance of the [ReactActivityDelegate]. We use [DefaultReactActivityDelegate]
