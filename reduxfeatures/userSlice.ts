@@ -7,23 +7,25 @@ export type User =  {
     name: string;
     email: string;
 }
-const initialState: Array<User> = [
+const initialState: User =
     {
         id: '',
         name: '',
         email: '',
     }
-]
+
 export const userSlice = createSlice({
     name: "USER_DETAILS",
     initialState,
     reducers: {
-            addUser: (state: any[], action: PayloadAction<User>) => {
-            state.push(action.payload);
+            updateUser: (state: any, action: PayloadAction<User>) => {
+            state.id = (action.payload.id);
+            state.email = (action.payload.email);
+            state.name = (action.payload.name);
         },
     },
 });
 
-export const { addUser } = userSlice.actions;
+export const { updateUser } = userSlice.actions;
 export const userSelector = (state: RootState) => state.userReducer;
 export default userSlice.reducer;
