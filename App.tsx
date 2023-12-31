@@ -9,6 +9,7 @@ import {
 } from 'react-native';
 import { Provider } from 'react-redux'
 import { Store } from './redux/store'
+import RootStack from './navigations/RootStack';
 
 
 // type SectionProps = PropsWithChildren<{
@@ -19,30 +20,28 @@ import { Store } from './redux/store'
 function App(): React.JSX.Element {
   return (
     <Provider store={Store}>
-      <SafeAreaView style={styles.container}>
+      <SafeAreaView className="flex-1">
         <StatusBar
-          backgroundColor="#fff"
+          //backgroundColor="#fff"
           barStyle={'dark-content'}
         />
-        <View style={styles.body}>
-          <Text>Welcome to Ra'Nkan</Text>
-        </View>
+        <RootStack />
       </SafeAreaView>
     </Provider>
     
   );
 }
   
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//   },
 
-  body: {
-    alignSelf: 'center',
-    alignItems: 'center'
-  }
-});
+//   body: {
+//     alignSelf: 'center',
+//     alignItems: 'center'
+//   }
+// });
 
 
 

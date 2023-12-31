@@ -24,9 +24,7 @@ export const userSlice = createSlice({
             state.name = (action.payload.name);
         },
         resetUser: (state: any, action: PayloadAction<User>) => {
-            state.name = ""
-            state.id = ""
-            state.email = ""
+            initialState
         },
     },
 });

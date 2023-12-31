@@ -1,5 +1,5 @@
-import PressableButton from "./PressableButton.jsx";
-import CustomText from "./CustomText.js";
+import PressableButton from "./PressableButton.tsx";
+import CustomText from "./CustomText.tsx";
 
 
 
