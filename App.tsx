@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 import { Provider } from 'react-redux'
 import { Store } from './redux/store'
-import RootStack from './navigations/RootStack';
+import RootStack from './navigations/navigations/RootStack';
 
 
 // type SectionProps = PropsWithChildren<{
@@ -22,7 +22,7 @@ function App(): React.JSX.Element {
     <Provider store={Store}>
       <SafeAreaView className="flex-1">
         <StatusBar
-          //backgroundColor="#fff"
+          backgroundColor="#fff"
           barStyle={'dark-content'}
         />
         <RootStack />

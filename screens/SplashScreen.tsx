@@ -4,12 +4,14 @@ import { Image, View } from 'react-native'
 import Animated, { useSharedValue, useAnimatedStyle, withTiming, Easing, ReduceMotion} from 'react-native-reanimated';
 import {ParamListBase} from '@react-navigation/native';
 import {StackNavigationProp} from '@react-navigation/stack';
+// import EncryptedStorage from 'react-native-encrypted-storage';
 
-
-const duration = 1500;
+const duration = 2000;
 
 
 const SplashScreen : FC = () : React.JSX.Element => {
+
+  // EncryptedStorage.clear();
 
   const navigation = useNavigation<StackNavigationProp<ParamListBase>>();
 
@@ -18,7 +20,7 @@ const SplashScreen : FC = () : React.JSX.Element => {
   const animatedDefault = useAnimatedStyle(() => ({
       transform: [{ scale: defaultAnim.value + 0.3},
         {translateY: defaultAnim.value + 150},
-        {translateX: defaultAnim.value - 50},
+        // {translateX: defaultAnim.value - 1},
       
       ]
   }));
@@ -30,7 +32,7 @@ const SplashScreen : FC = () : React.JSX.Element => {
       reduceMotion: ReduceMotion.System,
   }),
 
-  setTimeout(() => navigation.navigate("Onboarding"), 2500);
+  setTimeout(() => navigation.navigate("Onboarding"), 3000);
   }, [])
   
 

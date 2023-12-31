@@ -3,7 +3,7 @@ import Icons from '../utils/Icons';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import { wp, hp} from '../utils/globalVariables';
 import { useTheme } from 'react-native-paper';
-import { Homepage, Account, Customers, History } from '../screens';
+import { Homepage, Account, Customers, History } from '../../screens';
 
 
 const Tab = createMaterialBottomTabNavigator();

@@ -1,8 +1,7 @@
 import 'react-native-gesture-handler';
 import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import React, { useEffect } from 'react';
-import { SplashScreen, Onboarding } from '../screens';
+import { SplashScreen, Onboarding, OnboardingAll, LetUIn, SignUp, SignIn } from '../../screens';
 
 const Stack = createStackNavigator();
 
@@ -29,6 +28,10 @@ function RootStack() {
         >
           <Stack.Screen name='Splashscreen' component={SplashScreen}/>
           <Stack.Screen name='Onboarding' component={Onboarding}/>
+          <Stack.Screen name='Onboarding All' component={OnboardingAll}/>
+          <Stack.Screen name='LetUIn' component={LetUIn}/>
+          <Stack.Screen name='SignUp' component={SignUp}/>
+          <Stack.Screen name='SignIn' component={SignIn}/>
 
         </Stack.Navigator>
     </NavigationContainer>
