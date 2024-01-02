@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 import { Provider } from 'react-redux'
 import { Store } from './redux/store'
-import RootStack from './navigations/navigations/RootStack';
+import RootStack from './navigations/RootStack';
 
 
 // type SectionProps = PropsWithChildren<{

@@ -17,7 +17,7 @@ const OnboardingAll : FC = () : React.JSX.Element => {
     useEffect(() => {
         const autoRedirect = () => {
             setTimeout(() => {
-                navigation.navigate('Login');
+                navigation.navigate('LetUIn');
             }, 7000);
         }
         
