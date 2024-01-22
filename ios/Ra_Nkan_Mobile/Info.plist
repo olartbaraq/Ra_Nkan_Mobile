@@ -26,14 +26,13 @@
 	<true/>
 	<key>NSAppTransportSecurity</key>
 	<dict>
-	  <!-- Do not change NSAllowsArbitraryLoads to true, or you will risk app rejection! -->
 		<key>NSAllowsArbitraryLoads</key>
 		<false/>
 		<key>NSAllowsLocalNetworking</key>
 		<true/>
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+	<string/>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>
@@ -48,5 +47,20 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>FuturaPTBold.otf</string>
+		<string>FuturaPTLight.otf</string>
+		<string>FuturaPTMedium.otf</string>
+		<string>Inter-Bold.otf</string>
+		<string>Inter-Light-BETA.otf</string>
+		<string>Inter-Medium.otf</string>
+		<string>Inter-Regular.otf</string>
+		<string>De Futura.ttf</string>
+		<string>intreb.ttf</string>
+		<string>intrebol.ttf</string>
+		<string>intreg.ttf</string>
+		<string>intrepid.ttf</string>
+	</array>
 </dict>
 </plist>

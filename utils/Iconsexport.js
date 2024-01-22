@@ -11,6 +11,7 @@ import PhoneIcon from 'react-native-vector-icons/FontAwesome';
 import PasswordIcon from 'react-native-vector-icons/MaterialCommunityIcons';
 import EyeIcon from 'react-native-vector-icons/Feather';
 import EyeOffIcon from 'react-native-vector-icons/Feather';
+import { StyleProp, ViewStyle } from 'react-native';
 
 
 

@@ -17,7 +17,7 @@ const Header = ({title, onPress} : HeaderProps) => {
             <Pressable
                 onPress={onPress}
             >
-                <Icons name={"back"} size={hp(5)} color={'#000'}/>
+                <Icons name={"back"} size={hp(5)} color={'#000'} style={""}/>
             </Pressable>
             <Text className='text-black text-3xl capitalize'>{title}</Text>
         </View>

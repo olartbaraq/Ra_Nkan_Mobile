@@ -1,4 +1,4 @@
-import { Image, Pressable, StatusBar, StyleSheet, Text, View } from 'react-native'
+import { Image, Pressable, StatusBar, StyleSheet, Text, View, ScrollView } from 'react-native'
 import React, { FC } from 'react'
 import Icons from '../utils/Iconsexport'
 import { hp, wp } from '../utils/globalvariables'
@@ -34,7 +34,10 @@ const LetUIn : FC = () : React.JSX.Element => {
                 backgroundColor="#fff"
                 barStyle={'dark-content'}
             />
-            <View className='p-5 flex flex-col space-y-14 items-center'>
+            <ScrollView 
+                //className='p-5 flex flex-col space-y-14 items-center'
+                contentContainerStyle={styles.contentContainer}
+                >
                 <View className='space-y-5 items-center w-full'>
 
                     {/* Header Component */}
@@ -105,14 +108,24 @@ const LetUIn : FC = () : React.JSX.Element => {
                     <Pressable
                         onPress={GotoSignUp}
                     >
-                        <Text className='text-orange-600 text-medium text-xl'>Sign Up</Text>
+                        <Text style={{fontFamily: 'FuturaPTMedium'}} className='text-orange-600 text-medium text-xl'>Sign Up</Text>
                     </Pressable>
                 </View>
-            </View>
+            </ScrollView>
         </View>
     )
 }
 
 export default LetUIn
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    contentContainer: {
+        paddingVertical: hp(2),
+        paddingHorizontal: wp(2),
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        height: '100%',
+    }
+})
