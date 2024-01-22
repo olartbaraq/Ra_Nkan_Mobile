@@ -15,6 +15,7 @@ export const signUpFormSchema = z.object({
       invalid_type_error: 'Name must be a string',
       required_error: FIELD_REQUIRED_STR,
     })
+    .min(1, 'Firstname cannot be empty')
     .min(3, 'Minimum 3 characters')
     .max(50, 'Maximum 50 characters')
     .trim(),

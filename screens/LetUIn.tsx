@@ -35,7 +35,7 @@ const LetUIn : FC = () : React.JSX.Element => {
                 barStyle={'dark-content'}
             />
             <ScrollView 
-                //className='p-5 flex flex-col space-y-14 items-center'
+                className='p-5 flex flex-col space-y-14'
                 contentContainerStyle={styles.contentContainer}
                 >
                 <View className='space-y-5 items-center w-full'>
@@ -88,7 +88,7 @@ const LetUIn : FC = () : React.JSX.Element => {
 
                 {/* The or Line */}
                 <View className='relative w-full h-[2px] border-1 bg-slate-600'>
-                    <View className='absolute -top-5 right-44 bg-slate-100 h-10 w-10 rounded-full items-center justify-center'>
+                    <View className='absolute -top-5 right-40 bg-slate-100 h-10 w-10 rounded-full items-center justify-center'>
                         <Text className='text-black text-lg font-medium'>or</Text>
                     </View>
                 </View>
@@ -103,7 +103,7 @@ const LetUIn : FC = () : React.JSX.Element => {
                 </Pressable>
 
                 {/* Sign Up Option */}
-                <View className='flex flex-row items-center space-x-2'>
+                <View className='flex flex-row items-center space-x-2 mb-20'>
                     <Text className='text-lg text-gray-500 font-normal'>Don't have an account?</Text>
                     <Pressable
                         onPress={GotoSignUp}
@@ -120,12 +120,6 @@ export default LetUIn
 
 const styles = StyleSheet.create({
     contentContainer: {
-        paddingVertical: hp(2),
-        paddingHorizontal: wp(2),
-        display: 'flex',
-        flexDirection: 'column',
         alignItems: 'center',
-        justifyContent: 'space-between',
-        height: '100%',
     }
 })
